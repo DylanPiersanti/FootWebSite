@@ -5,7 +5,7 @@ if (!isset($_GET['path']) || !$_GET['path']) {
     switch ((string) $_GET['path']) {
         case 'teams':
             require('controllers/teams.php');
-            test();
+            teamsList();
             break;
         default:
             require('views/404.php');

@@ -3,7 +3,12 @@
     ob_start();
 ?>
 
-blablabla
+<!-- 
+<?php foreach($selectTeams as $teams) {
+    echo $teams['name'];
+}
+?>
+-->
 
 <?php 
     $content = ob_get_clean();

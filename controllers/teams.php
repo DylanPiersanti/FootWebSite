@@ -2,6 +2,7 @@
     require('models/teams.php');
     
 
-    function test() {
+    function teamsList() {
+        $selectTeams = getTeams();
         require('views/teams.php');
     }

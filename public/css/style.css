@@ -1,0 +1,146 @@
+body {
+
+}
+
+.container {
+    max-width: 1300px;
+}
+
+header {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    min-height: 570px;
+    width: 100%;
+}
+
+.topLogo {
+    height: 150px;
+}
+
+.active {
+    color: #a32424 !important;
+}
+
+@media (max-width: 769px) {
+    .socialLink {
+        display: none;
+    }
+}
+
+.socialLink ul li {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.socialLink ul li:hover {
+    color: #a32424;
+    border: 2px solid #a32424;
+}
+
+.searchBar {
+    border: 1px solid #a32424;
+}
+
+.fa-search {
+    height: 38px;
+    width: 60px;
+    margin-left:-5px;
+}
+
+.sepparator {
+    min-height: 50px;
+    width: 100%;
+    background-color: #095796;
+}
+
+.actu {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 50%);
+    margin-bottom: 50px;
+    padding: 5px;
+}
+
+.actu ul li {
+    display: inline;
+}
+
+.actuTitle {
+    color: #edcd15;
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.actuSubTitle {
+    color: #fff;
+}
+
+.otherNews {
+    color: #fff;
+    font-size: 20px;
+}
+
+.fa-newspaper {
+    color: #ffd900;
+}
+
+.contentMain {
+    min-height: 450px;
+}
+
+.currentVersus {
+    background-color: #a32424;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.nextMatch {
+    background-image: url('../images/stadium.jpg');
+    background-size: cover;
+    background-color: #0b1d38;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.nextMatchContent {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+.nextMatchContent span {
+    font-weight: bold;
+    font-size: 5rem;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.versus {
+    color: #fff;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.timerToNext {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.teamsToNext {
+    display: inline;
+}
+
+.currentVersus span {
+    font-weight: bold;
+    font-size: 5rem;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.currentTeams {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+}
