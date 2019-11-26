@@ -11,7 +11,7 @@ ob_start();
             <div class="col-12 mt-5 mb-4">
                 <h1 class="text-white">
                     <?=
-                        $currentCoach['name'];
+                        $currentCoach['coachName'];
                     ?>
                 </h1>
                 <div class="jumbotron currentTeam">
@@ -31,7 +31,7 @@ ob_start();
                                     <tr>
                                         <td>Nom / prénom :</td>
                                         <td><?=
-                                                $currentCoach['name'];
+                                                $currentCoach['coachName'];
                                             ?>
                                         </td>
                                     </tr>
@@ -49,7 +49,9 @@ ob_start();
                                     </tr>
                                     <tr>
                                         <td>Equipe : </td>
-                                        <td><?= $currentCoach['nationality'] ?></td>
+                                        <td>
+                                            <a href="?path=teams&id=<?= $currentCoach['teamId'] ?>"><?= $currentCoach['teamName'] ?></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Lequipe.fr : </td>

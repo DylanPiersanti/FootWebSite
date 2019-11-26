@@ -64,10 +64,10 @@ ob_start();
                                     <tr>
                                         <td>Stade : </td>
                                         <td>
-                                            <?= 
-                                            $currentTeam['stadeName'] .
-                                            " | (" . $currentTeam['stadeAdress'] . ")";
-                                             ?>
+                                            <?=
+                                                $currentTeam['stadeName'] .
+                                                    " | (" . $currentTeam['stadeAdress'] . ")";
+                                            ?>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -78,6 +78,26 @@ ob_start();
             </div>
         </div>
     </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="terrain">
+
+                        <div class="teamPlayers">
+
+                            
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <?php
