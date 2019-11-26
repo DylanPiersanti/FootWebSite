@@ -1,16 +1,54 @@
 <?php
-    $title = "Titre de la page";
-    ob_start();
+$title = "Titre de la page";
+ob_start();
 ?>
 
-<!-- 
-<?php foreach($selectTeams as $teams) {
-    echo $teams['name'];
-}
-?>
--->
+<main class="teamList">
+    <div class="container">
+        <div class="py-5">
+            <div class="container">
+                <div class="row hidden-md-up">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Logo</th>
+                                <th scope="col">Nom de l'équipe</th>
+                                <th scope="col">Président</th>
+                                <th scope="col">site web</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($selectTeams as $listTeams) { ?>
+                                <tr>
+                                    <th class="teamIcon">
+                                        <a href="?path=teams&id=<?= $listTeams['id'] ?>">
+                                            <img src="<?= $listTeams['logo'] ?>" />
+                                        </a>
+                                    </th>
+                                    <td>
+                                        <?= $listTeams['name'] .
+                                                " <br/> (" .
+                                                $listTeams['short_name'] .
+                                                ")" ?>
+                                    </td>
+                                    <td>
+                                        <?= $listTeams['president'] ?>
+                                    </td>
+                                    <td>
+                                        <a href="<?= $listTeams['website'] ?>" class="fas fa-external-link-alt"></a>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
 
-<?php 
-    $content = ob_get_clean();
-    require('public/index.php');
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<?php
+$content = ob_get_clean();
+require('public/index.php');
 ?>

@@ -6,3 +6,8 @@
         $selectTeams = getTeams();
         require('views/teams.php');
     }
+
+    function myTeam($id) {
+        $currentTeam = showTeam($id);
+        require('views/currentTeam.php');
+    }

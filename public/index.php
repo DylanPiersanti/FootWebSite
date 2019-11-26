@@ -44,21 +44,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="./">Accueil <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Les équipes</a>
+                            <a class="nav-link" href="?path=teams">Les équipes</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Les stades
+                        <li class="nav-item">
+                            <a class="nav-link" href="?path=coachs">
+                                Les coatchs
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -91,6 +85,30 @@
     </header>
 
     <?= $content ?>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href=""><i class="fab fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                </hr>
+            </div>
+            <div class="row">
+                <div class="mb-5 col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p>Ligue 1 corporation | un site réalisé pour les amateurs de foot</p>
+                    <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="">Ligue1.fr</a></p>
+                </div>
+                </hr>
+            </div>
+        </div>
+    </section>
 
     <script src="./public/jquery/jquery.min.js"></script>
     <script src="./public/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -35,7 +35,7 @@ ob_start();
                             2
                         </div>
                         <div class="col-sm-12 col-lg-4 versus">
-                            
+
                         </div>
                         <div class="col-sm-12 col-lg-4">
                             0
@@ -69,6 +69,7 @@ ob_start();
         </div>
     </div>
 </main>
+
 
 <?php
 $content = ob_get_clean();
